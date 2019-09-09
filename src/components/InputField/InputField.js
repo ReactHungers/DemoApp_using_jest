@@ -16,13 +16,16 @@ class InputField extends React.Component {
 
     render() {
         return (
-            <input 
-                type={this.props.type} 
-                name={this.props.name}
-                onChange={this.onInputChange} 
-                value={this.state.username}
-                placeholder={this.props.placeholder} 
-            />
+            <div>
+                <input 
+                    type={this.props.type} 
+                    name={this.props.name}
+                    className={this.props.className}
+                    onChange={this.onInputChange} 
+                    value={this.state.username}
+                    placeholder={this.props.placeholder} 
+                />
+            </div>
         )
     }
 }
