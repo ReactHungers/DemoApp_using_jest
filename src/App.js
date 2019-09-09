@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Demo from './components/demo/Demo';
+import InputField from './components/InputField/InputField';
 
 function App() {
   return (
@@ -10,6 +11,14 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h4>Demo Component</h4>
         <Demo firstVal="3" secondVal="5"/>
+        <h4>Input Field Test Component</h4>
+        <InputField 
+          type="text" 
+          name="username" 
+          className="form-controls" 
+          placeholder="Enter your username" 
+          val="raman" 
+        />
       </header>
     </div>
   );
