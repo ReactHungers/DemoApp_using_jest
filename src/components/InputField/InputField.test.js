@@ -15,7 +15,6 @@ test('testing input field', () => {
             val="raman" 
         />
     );
-    console.log("wrapper "+wrapper)
     expect(wrapper.find('input').length).toEqual(1)
     expect(wrapper.find('.form-control').length).toEqual(1)
 })

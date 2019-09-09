@@ -1,8 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import Demo from './components/demo/Demo';
 import InputField from './components/InputField/InputField';
+import Counter from './components/counter/Counter';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           placeholder="Enter your username" 
           val="raman" 
         />
+        <h4>Counter Component</h4>
+        <Counter />
       </header>
     </div>
   );
