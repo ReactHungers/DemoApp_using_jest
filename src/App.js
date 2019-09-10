@@ -6,14 +6,16 @@ import Demo from './components/demo/Demo';
 import InputField from './components/InputField/InputField';
 import Counter from './components/counter/Counter';
 import HomePage from './HomePage';
-import LandingPage from './components/landingpage/LandingPage';
+// import LandingPage from './components/landingpage/LandingPage';
 import Aux from './components/aux/Aux';
+import GetStartedPage from './components/started/GetStarted';
 
 function App() {
   return <React.Fragment>
     <Router>
-      <Route exact path="/" component={LandingPage} />
-      <Route path="/landingpage" component={LandingPage} />
+      <Route exact path="/" component={GetStartedPage} />
+      {/* <Route path="/landingpage" component={LandingPage} /> */}
+      <Route path="/landingpage" component={GetStartedPage} />
     </Router>
     <Aux>
       <Router>
