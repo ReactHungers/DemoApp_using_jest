@@ -7,17 +7,23 @@ import InputField from './components/InputField/InputField';
 import Counter from './components/counter/Counter';
 import HomePage from './HomePage';
 import LandingPage from './components/landingpage/LandingPage';
+import Aux from './components/aux/Aux';
 
 function App() {
-  return (
+  return <React.Fragment>
     <Router>
       <Route exact path="/" component={LandingPage} />
-      <Route path="/home" component={HomePage} />
-      <Route path="/Counter" component={Counter} />
-      <Route path="/inputfieldtest" component={InputField} />
-      <Route path="/demo" component={Demo} />
+      <Route path="/landingpage" component={LandingPage} />
     </Router>
-  );
+    <Aux>
+      <Router>
+        <Route path="/home" component={HomePage} />
+        <Route path="/counter" component={Counter} />
+        <Route path="/inputfieldtest" component={InputField} />
+        <Route path="/demo" component={Demo} />
+      </Router>
+    </Aux>
+  </React.Fragment>;
 }
 
 export default App;
